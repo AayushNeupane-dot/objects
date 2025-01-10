@@ -1,0 +1,500 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .animation-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Bouncing Ball Animation */
+  .ball {
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+  
+  /* Spinning Box Animation */
+  .box {
+    width: 100px;
+    height: 100px;
+    background: #4caf50;
+    margin: 1rem auto;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Hover Effect */
+  .hover-btn {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hover-btn:hover {
+    transform: scale(1.1);
+    background-color: #0d47a1;
+  }
+/* Pulsing Circle Animation */
+.circle {
+    width: 60px;
+    height: 60px;
+    background: #e91e63;
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+  }
+  
+  /* Sliding Text Animation */
+  .sliding-text {
+    font-size: 1.2rem;
+    color: #673ab7;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slideIn 3s ease-in-out infinite;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Rainbow Border Animation */
+  .rainbow-box {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbow 5s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+    100% {
+      border-image-source: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+    }
+  }
+  
+  /* Star Twinkle Animation */
+  .stars {
+    width: 100%;
+    height: 150px;
+    background: black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stars::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, white 1px, transparent 1px) repeat;
+    background-size: 10px 10px;
+    animation: twinkle 2s infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #3b82f6, #9333ea);
+    color: white;
+    text-align: center;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(120deg, #9333ea, #3b82f6);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 1200px;
+  }
+  
+  .animation-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .animation-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Enhanced Footer */
+  footer {
+    padding: 1rem;
+    background: linear-gradient(120deg, #3b82f6, #9333ea);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+  }
+  
+  /* Bouncing Ball Animation */
+  .ball {
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+  
+  /* Spinning Box Animation */
+  .box {
+    width: 100px;
+    height: 100px;
+    background: #4caf50;
+    margin: 1rem auto;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Hover Effect */
+  .hover-btn {
+    background: linear-gradient(120deg, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hover-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(120deg, #9333ea, #3b82f6);
+  }
+  
+  /* Pulsing Circle Animation */
+  .circle {
+    width: 60px;
+    height: 60px;
+    background: #e91e63;
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+  }
+  
+  /* Sliding Text Animation */
+  .sliding-text {
+    font-size: 1.2rem;
+    color: #673ab7;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slideIn 3s ease-in-out infinite;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Rainbow Border Animation */
+  .rainbow-box {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbow 5s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+    100% {
+      border-image-source: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+    }
+  }
+  
+  /* Star Twinkle Animation */
+  .stars {
+    width: 100%;
+    height: 150px;
+    background: black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stars::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, white 1px, transparent 1px) repeat;
+    background-size: 10px 10px;
+    animation: twinkle 2s infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+/* Fireworks Display */
+.firework {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, yellow, transparent);
+    border-radius: 50%;
+    animation: explode 1s ease-in-out infinite;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(0.2);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  /* Rising Bubbles */
+  .bubbles {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(180deg, #000428, #004e92);
+    overflow: hidden;
+  }
+  
+  .bubbles::before,
+  .bubbles::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: bubble-rise 5s infinite ease-in-out;
+  }
+  
+  .bubbles::before {
+    left: 25%;
+    animation-delay: 1s;
+  }
+  
+  .bubbles::after {
+    left: 75%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes bubble-rise {
+    0% {
+      bottom: -50px;
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      bottom: 250px;
+      opacity: 0;
+    }
+  }
+  
+  /* Rotating Gradient Text */
+  .gradient-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-rotate 5s infinite linear;
+  }
+  
+  @keyframes gradient-rotate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  /* 3D Flip Card */
+  .flip-card {
+    perspective: 1000px;
+    width: 150px;
+    height: 200px;
+    margin: auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-front {
+    background: #4caf50;
+  }
+  
+  .flip-card-back {
+    background: #f44336;
+    transform: rotateY(180deg);
+  }
+    
